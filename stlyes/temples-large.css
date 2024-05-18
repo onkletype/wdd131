@@ -1,0 +1,105 @@
+header{
+    background-color: rgb(34, 27, 160);
+    color: black;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+
+}
+nav{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+nav a{
+    padding: 1rem;
+}
+nav a:hover{
+    background-color: aliceblue;
+}
+header{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+main{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+h2{ 
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+figure img{
+    height:150px;
+    width: 200px;
+}
+#first{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    max-width: 250px;
+    max-height: 250px;
+}
+#second{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    max-width: 250px;
+    max-height: 250px;
+}
+#third{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    max-width: 250px;
+    max-height: 250px;
+}
+#fourth{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    max-width: 250px;
+    max-height: 250px;
+}
+#fifth{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    max-width: 250px;
+    max-height: 250px;
+}
+#sixth{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    max-width: 250px;
+    max-height: 250px;
+}
+#seventh{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    max-width: 250px;
+    max-height: 250px;
+}
+#eigth{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    max-width: 250px;
+    max-height: 250px;
+}
+#nineth{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    max-width: 250px;
+    max-height: 250px;
+}
+footer{
+    background-color: rgb(34, 27, 160);
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    margin: 0;
+}
+footer p, span{
+    padding:15px;
+}
