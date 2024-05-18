@@ -23,7 +23,7 @@
         background-color: aliceblue;
     }
     .open a{
-        display: block;
+    
         display: flex;
         flex-direction: column;
     }
@@ -52,11 +52,14 @@
         padding:15px;
     }
     /* Adding the hamburger button and CSS for it */
+    button{
+        display: block;
+    }
     #menu::before {
       content: "☰";
     }
     #menu.open::before {
-      content: "❎";
+      content: "X";
     }
     #menu{
         position: fixed;
