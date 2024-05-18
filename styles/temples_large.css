@@ -14,6 +14,7 @@ nav{
 }
 nav a{
     padding: 1rem;
+    margin: auto;
 }
 nav a:hover{
     background-color: aliceblue;
@@ -102,4 +103,7 @@ footer{
 }
 footer p, span{
     padding:15px;
+}
+#menu{
+    display: none;
 }
