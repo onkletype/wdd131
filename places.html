@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/places.css">
+    <script src="scripts/places.js" defer></script>
+    <title>Iceland</title>
 </head>
 <body>
-    I just made a website
+    <header>
+        <h1>Iceland</h1>
+    </header>
+    <main>
+        <div class="container">
+        <div class="picture">
+            <picture>
+                <source media="(min-width: 650px)" srcset="images/landscape_iceland.webp" width="100%">
+                <img src="images/mobile_iceland.webp" alt="picture of nature in iceland" width="100%">
+            </picture>
+        </div>
+        <div class="allData">
+        <h2>Data</h2>
+        <div class="dataTable">
+            <P class="label">Area: </P> <p class="data">103,000 km²</P>
+            <P class="label">Population: </P> <p class="data">377,416</P>
+            <P class="label">Capital: </P> <p class="data">Reykjavík</P>
+            <P class="label">languages: </P> <p class="data">Icelandic</P>
+            <P class="label">Curency: </P> <p class="data">Króna</P>
+            <P class="label">Time Zone: </P> <p class="data">GMT</P>
+            <P class="label">Calling Code: </P> <p class="data">+354</P>
+            <P class="label">Internet TLD: </P> <p class="data">.is</P>
+        </div>
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <div class="emoji">
+            </div>
+            <div class="dataTable">
+                <p class="label">Wind Chill</p> <p id="windChill" class="data"></p>
+                <p class="label">Tempature</p> <p class="data">9°C</p>
+                <p class="label">Condtions</p> <p class="data">Precipitation: 70%</p>
+                <p class="label">Wind</p> <p class="data">35 km/h</p>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <span>©<span id="currentYear"></span></span>
+            <p>Daeson Grover -- Idaho</p>
+            <p>Last Modified:</p><p id="lastModified"></p>
+        </div>
+            
+    </footer>
 </body>
 </html>
