@@ -76,20 +76,20 @@ const temples = [
         "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/idaho-falls-idaho/2019/400x250/7-Idaho-Falls-Temple-1375367.jpg"
     },
     {
-        templeName: "Idaho Falls Idaho",
-        location: "Idaho Falls Idaho",
-        dedicated: "1945, September 23",
-        area: 90000,
+        templeName: "Pocatello Idaho",
+        location: "Pocatello Idaho",
+        dedicated: "2021, Novemeber 7",
+        area: 71125,
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/idaho-falls-idaho/2019/400x250/7-Idaho-Falls-Temple-1375367.jpg"
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/pocatello-idaho/400x250/pocatello-idaho-temple-open-house.jpg"
     },
     {
-        templeName: "Idaho Falls Idaho",
-        location: "Idaho Falls Idaho",
-        dedicated: "1945, September 23",
-        area: 90000,
+        templeName: "Salt Lake City Utah",
+        location: "Salt Lake City Utah",
+        dedicated: "1893, April 24th",
+        area: 382207,
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/idaho-falls-idaho/2019/400x250/7-Idaho-Falls-Temple-1375367.jpg"
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/400x225/NorthBirdsEye.jpg"
     }
   ];
 
