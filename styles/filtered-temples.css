@@ -1,0 +1,66 @@
+@media screen and (max-width: 640px) {
+    header{
+        background-color: rgb(34, 27, 160);
+        color: black;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    
+    }
+    nav{
+
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        color: black;
+        flex-direction: column;
+    }
+    .navMenu a{
+        display: none;
+        padding: 1rem;
+        margin: auto;
+    }
+    nav a:hover{
+        background-color: aliceblue;
+    }
+    .open a{
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .templeCard{
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    footer{
+        background-color: rgb(34, 27, 160);
+        display: flex;
+        text-align: center;
+        justify-content:center;
+        margin: 0;
+    }
+    footer p, span{
+        padding:15px;
+    }
+    /* Adding the hamburger button and CSS for it */
+    button{
+        display: block;
+    }
+    #menu::before {
+      content: "☰";
+    }
+    #menu.open::before {
+      content: "X";
+    }
+    #menu{
+        position: fixed;
+        top: 2.5em;
+        right: 10px;
+    }
+}

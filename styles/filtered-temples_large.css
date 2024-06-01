@@ -1,0 +1,53 @@
+header{
+    background-color: rgb(34, 27, 160);
+    color: black;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+
+}
+nav{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+nav a{
+    padding: 1rem;
+    margin: auto;
+}
+nav a:hover{
+    background-color: aliceblue;
+}
+header{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.templeCard{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+h2{ 
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(34, 27, 160);
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    margin: 0;
+}
+
+footer p, span{
+    padding:15px;
+}
+
+button{
+    display:none;
+}
