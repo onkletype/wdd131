@@ -45,6 +45,7 @@ footer{
     text-align: center;
     justify-content:center;
     margin: 0;
+    margin-top: 1rem;
 }
 
 footer p, span{
@@ -53,10 +54,6 @@ footer p, span{
 
 button{
     display:none;
-}
-img{
-    height: 225px;
-    width: 360px;
 }
 section{
     border: 1px solid black;

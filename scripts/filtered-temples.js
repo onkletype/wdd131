@@ -95,8 +95,25 @@ const temples = [
 
 createTempleCard();
 
-function createTempleCard() {
-    temples.forEach(temple => {
+const oldLink = document.querySelector('#old');
+const newLink = document.querySelector('#new');
+const laegeLink = document.querySelector('#large');
+const smallLink = document.querySelector('#small');
+const homeLink = document.querySelector('#home');
+
+oldLink.addEventListener('click', () => {
+  let filteredTemples = temples.filter(temple => {
+    const dedicatedDate = new Date(temple.dedicated);
+    const year1900 = new Date('1900-01-01');
+    return dedicatedDate >= year1900;
+  });
+  
+  // You might want to do something with the filteredTemples here
+  console.log(filteredTemples);
+});
+
+function createTempleCard(filteredTemples) {
+    filteredTemples.forEach(temple => {
         let card = document.createElement('section');
         let name = document.createElement('h3');
         let location = document.createElement('p');
