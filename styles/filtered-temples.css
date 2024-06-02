@@ -4,6 +4,8 @@
         color: black;
         width: 100%;
         text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 100px;
     }
     h1{
         max-width: 100%;

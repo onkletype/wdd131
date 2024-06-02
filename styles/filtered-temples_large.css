@@ -4,6 +4,8 @@ header{
     margin: 0;
     width: 100%;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
 }
 nav{
@@ -21,10 +23,7 @@ nav a{
 nav a:hover{
     background-color: aliceblue;
 }
-header{ 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+
 .templeCard{
     margin-left: auto;
     margin-right: auto;
@@ -33,9 +32,12 @@ header{
     grid-template-rows: 1fr 1fr 1fr ;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
 }
-main{
-    display: flex;
+img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 h2{ 
     text-align: center;
@@ -60,10 +62,14 @@ button{
 section{
     border: 1px solid black;
     background-color: blanchedalmond;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 100%;
+    min-height: 400px;
 }
 .label{
     font-weight: bolder;
     font-size: 1rem;
 }
+
