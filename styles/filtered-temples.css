@@ -2,10 +2,11 @@
     header{
         background-color: rgb(34, 27, 160);
         color: black;
-        margin: 0;
         width: 100%;
         text-align: center;
-    
+    }
+    h1{
+        max-width: 100%;
     }
     nav{
 

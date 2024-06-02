@@ -86,33 +86,88 @@ const temples = [
     {
         templeName: "Salt Lake City Utah",
         location: "Salt Lake City Utah",
-        dedicated: "1893, April 24th",
+        dedicated: "1893, April, 6",
         area: 382207,
         imageUrl:
         "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/400x225/NorthBirdsEye.jpg"
     }
   ];
+ 
 
-createTempleCard();
-
+//  naming variebles and calling them from html like buttons
 const oldLink = document.querySelector('#old');
 const newLink = document.querySelector('#new');
-const laegeLink = document.querySelector('#large');
+const largeLink = document.querySelector('#large');
 const smallLink = document.querySelector('#small');
 const homeLink = document.querySelector('#home');
-
-oldLink.addEventListener('click', () => {
+ 
+// function to filter and get oinly old temples
+function getOldTemples() {
   let filteredTemples = temples.filter(temple => {
-    const dedicatedDate = new Date(temple.dedicated);
-    const year1900 = new Date('1900-01-01');
-    return dedicatedDate >= year1900;
+  const dedicatedDate = new Date(temple.dedicated);
+  const year1900 = new Date('1900-01-01');
+  return dedicatedDate <= year1900;
   });
-  
-  // You might want to do something with the filteredTemples here
-  console.log(filteredTemples);
+  return filteredTemples;
+}
+// function to filter and get only new temples
+function getNewTemples() {
+  let filteredTemples = temples.filter(temple => {
+  const dedicatedDate = new Date(temple.dedicated);
+  const year2000 = new Date('2000-01-01');
+  return dedicatedDate >= year2000;
+  });
+  return filteredTemples;
+}
+
+// function that checks the area of temples and returns ones bigger then 90000
+function getLargeTemples() {
+  let filteredTemples = temples.filter(temple => temple.area >= 90000);
+  return filteredTemples;
+}
+
+// function that checks that area of temples and returns ones that are smaller than 10000
+function getSmallTemples() {
+  let filteredTemples = temples.filter(temples => temples.area <= 10000);
+  return filteredTemples;
+}
+
+
+// assigning variable names to the different functions
+const oldTemples = getOldTemples()
+const newTemples = getNewTemples()
+const largeTemples = getLargeTemples()
+const smallTemples = getSmallTemples()
+// event listener that populates things for old temple
+oldLink.addEventListener('click', () => {
+  createTempleCard(oldTemples);
+});
+ 
+// event lsitener that populates everything for new temples
+newLink.addEventListener('click', () => {
+  createTempleCard(newTemples);
 });
 
+// event listener that populates large temples
+largeLink.addEventListener('click', () => {
+  createTempleCard(largeTemples)
+})
+
+// event listener that populates small temples
+smallLink.addEventListener('click', () => {
+  createTempleCard(smallTemples)
+})
+
+// event lsitener for when you hit home/populate full list
+homeLink.addEventListener('click', () => {
+  createTempleCard(temples)
+})
+
+
+
+// function thaqt actually creates the temple cards
 function createTempleCard(filteredTemples) {
+  document.querySelector('.templeCard').innerHTML = '';
     filteredTemples.forEach(temple => {
         let card = document.createElement('section');
         let name = document.createElement('h3');
@@ -120,7 +175,7 @@ function createTempleCard(filteredTemples) {
         let dedication = document.createElement('p');
         let area = document.createElement('p');
         let img = document.createElement('img');
-
+ 
         name.textContent = temple.templeName;
         location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
         dedication.innerHTML = `<span class="label">Dedication:</span> ${temple.dedicated}`;
@@ -128,13 +183,13 @@ function createTempleCard(filteredTemples) {
         img.setAttribute('src', temple.imageUrl);
         img.setAttribute('alt', `${temple.templeName} temple`);
         img.setAttribute("loading", "lazy");
-
+ 
         card.appendChild(name);
         card.appendChild(location);
         card.appendChild(dedication);
         card.appendChild(area);
         card.appendChild(img);
-
+ 
         document.querySelector('.templeCard').appendChild(card);
     });
 };
