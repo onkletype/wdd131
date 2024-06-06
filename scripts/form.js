@@ -59,11 +59,10 @@ function addToCounter() {
   }
 }
 
-const counter = addToCounter();
 const counterValueElement = document.getElementById('counterValue');
 const Submitbutton = document.getElementById('button')
 
 Submitbutton.addEventListener('click', function() {
-    const newCount = counter();
+    const newCount = addToCounter();
     counterValueElement.textContent = newCount;
 });
