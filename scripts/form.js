@@ -39,17 +39,11 @@ const products = [
 
 
 function createProductList(products) {
-  // Assuming there's a <select> element with id="productList"
   const productList = document.getElementById('product_names');
-
-  // Iterate over the products array
   products.forEach(product => {
-      // Create a new option element
       const option = document.createElement('option');
-      // Set the value and text content of the option element
       option.value = product.name;
       option.textContent = product.name;
-      // Append the option element to the select element
       productList.appendChild(option);
   });
 }
@@ -57,14 +51,19 @@ let select = document.getElementById('product_names')
 select.addEventListener('click', createProductList(products))
 
 
-// Load the counter value from localStorage if available, or initialize it to 0
-let counter = localStorage.getItem('') || 0;
+function addToCounter() {
+  let count = 0;
+  return function() {
+    count += 1;
+    return count;
+  }
+}
 
-// Display the current counter value on the webpage
-document.getElementById('counter').textContent = counter;
+const counter = addToCounter();
+const counterValueElement = document.getElementById('counterValue');
+const Submitbutton = document.getElementById('button')
 
-// Increment the counter value
-counter++;
-
-// Update the counter value in localStorage
-localStorage.setItem('review.html', counter);
+Submitbutton.addEventListener('click', function() {
+    const newCount = counter();
+    counterValueElement.textContent = newCount;
+});
