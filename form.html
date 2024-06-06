@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <title>forms</title>
+</head>
+<body>
+    <header>
+        <h2>Product Review Form</h2>
+    </header>
+    <form  action="review.html" method="get">
+        <h3>Please Select your product</h3>
+        <select name="product_names" id="product_names" required>
+            <option value="select a product..." disabled selected>Select a Product</option>
+        </select>
+        <h3>Overall review</h3>
+        <div id="star_review">
+            <div class="star">
+                <input type="radio" id="1star" name="stars" value="stars" required>
+                <label for="1star">☆</label>
+            </div>
+            <div class="star">
+                <input type="radio" id="2star" name="stars" value="stars" required>
+                <label for="2star">☆☆</label>
+            </div>
+            <div class="star">
+                <input type="radio" id="3star" name="stars" value="stars" required>
+                <label for="3star">☆☆☆</label>
+            </div>
+            <div class="star">
+                <input type="radio" id="4star" name="stars" value="stars" required>
+                <label for="4star">☆☆☆☆</label>
+            </div>
+            <div class="star">
+            <input type="radio" id="5star" name="stars" value="stars" required>
+            <label for="5star">☆☆☆☆☆</label>
+            </div>
+        </div>
+
+        <div>
+            <h3 for="date_of_instilation">What is the date of instilation*</h3>
+            <input type="date" name="date_of_instilation" id="date_of_instilation" required>
+        </div>
+
+        <h3>Which features did you find useful in the product? (check all that apply)</h3>
+        <div id="useful">
+            <div class="usefulness">
+                <input type="checkbox" name="durible" id="durible" value="durible">
+                <label for="durible">Durible</label>
+            </div>
+            <div class="usefulness">
+                <input type="checkbox" name="ease_of_use" id="ease_of_use" value="ease_of_use">
+                <label for="ease_of_use">Ease of use</label>
+            </div>
+            <div class="usefulness">
+                <input type="checkbox" name="performance" id="performance" value="performance">
+                <label for="performance">Performance</label>
+            </div>
+            <div class="usefulness">
+                <input type="checkbox" name="design"  id="design" value="design">
+                <label for="design">Design</label>
+            </div>
+        </div>
+
+        <div>
+            <h3 for="written_review">Written Review (optional)</h3>
+            <textarea name="written_review" id="written_review" rows="5" cols="75"></textarea>
+        </div>
+
+        <div id='username_div'>
+            <h3 for="username">Your Name (optional)</h3>
+            <input type="text" id="username" name="username">
+        </div>
+
+        <div id="button">
+        <input type="submit" value="Post Review" class="submit">
+        </div>
+
+
+    </form>
+    <footer>
+        <div>
+            <span>©<span id="currentYear"></span></span>
+            <p>Daeson Grover -- Idaho</p>
+            <p>Last Modified:</p><p id="lastModified"></p>
+        </div>
+            
+    </footer>
+</body>
+</html>

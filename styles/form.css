@@ -1,0 +1,54 @@
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+form{
+    background-color: rgb(185, 185, 185);
+    color: black;
+    grid-column: 1/2;
+    text-align: left;
+    padding: 1rem;
+    margin: 1rem .5rem;
+    border-radius: 10px;
+}
+#star_review{
+    display: flex;
+    gap: 40px;
+}
+.star{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#useful{
+    text-align: left;
+}
+header{
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+#button{
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.submit{
+    font-size: 2rem;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+#username{
+    width: 100%;
+}
+h3{
+    font-size: 1em;
+    margin-bottom: .5rem;
+    margin-top: 1.5rem;
+}
+footer{
+    grid-column: 1/2;
+    background-color: blue;
+    text-align: center;
+}
