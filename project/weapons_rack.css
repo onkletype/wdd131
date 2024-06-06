@@ -1,0 +1,41 @@
+.slide-container {
+    width: 800px;
+    height: 600px;
+    margin-left: 1rem;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+}
+/* width is uqual to sum of all widths of img, height is = 1 img */
+.image-container {
+    width: 2408px;
+    height: 600px;
+    position: relative;
+    transition: left 2s;
+}
+
+.slide-image{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.button-container{
+    top: -50px;
+    position: relative;
+}
+.slider-button{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+#slider-image-1:target ~ .image-container{
+    left: 0px;
+}
+#slider-image-2:target ~ .image-container{
+    left: -800px;
+}
+#slider-image-3:target ~ .image-container{
+    left: -1600px;
+}
