@@ -50,19 +50,4 @@ function createProductList(products) {
 let select = document.getElementById('product_names')
 select.addEventListener('click', createProductList(products))
 
-
-function addToCounter() {
-  let count = 0;
-  return function() {
-    count += 1;
-    return count;
-  }
-}
-
-const counterValueElement = document.getElementById('counterValue');
-const Submitbutton = document.getElementById('button')
-
-Submitbutton.addEventListener('click', function() {
-    const newCount = addToCounter();
-    counterValueElement.textContent = newCount;
-});
+// localStorage.setItem('count', 0)
