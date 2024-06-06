@@ -12,6 +12,7 @@
     height: 600px;
     position: relative;
     transition: left 2s;
+    gap: 0px;;
 }
 
 .slide-image{
