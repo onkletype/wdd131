@@ -58,8 +58,33 @@ main {
     margin: 1rem;
 }
 header{
-display: flex;
-margin-bottom: 200px;
+    display: flex;
+    margin-bottom: 200px;
+    justify-content: space-between;
+}
+#menu{
+    background-color: white;
+    border: none;
+    width: 200px;
+    text-align: center;
+    height: 150px;
+    position: relative;
+    right:10px;
+}
+.menu_item{
+    text-align: center;
+    color: black;
+    font-size: 1.3rem;
+}
+#menu-options{
+    position:absolute;
+    top:15%;
+    left:13%;
+    display:flex;
+    flex-direction:column;
+    background-color:transparent;
+    border:none;
+     
 }
 h1{
     text-align: center;
