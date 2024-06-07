@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="customize.css">
+    <script src="customize.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
@@ -35,26 +36,25 @@
     <main>
         <h3>Customize Here</h3>
         <div class="custom-board">
-
             <div class="custom_container">
                 <div class="custom_object">
-                    <img src="img/custom_img/blank.jpg" alt="blank">
+                    <img src="img/custom_img/blank.jpg" alt="blank" data-value="0">
                     <p class="price">+0$</p>
                 </div>
                 <div class="custom_object">
-                    <img src="img/custom_img/style.jpg" alt="style name">
+                    <img src="img/custom_img/style.jpg" alt="style name" data-value="5">
                     <p class="price">+5$</p>
                 </div>
                 <div class="custom_object">
-                    <img src="img/custom_img/yinyang.jpg" alt="yin yang">
+                    <img src="img/custom_img/yinyang.jpg" alt="yin yang" data-value="10">
                     <p class="price">+10$</p>
                 </div>
                 <div class="custom_object">
-                    <img src="img/custom_img/korean.jpg" alt="korean name">
+                    <img src="img/custom_img/korean.jpg" alt="korean name" data-value="5">
                     <p class="price">+5$</p>
                 </div>
                 <div class="custom_object">
-                    <img src="img/custom_img/fighter.jpg" alt="fighter siloutte">
+                    <img src="img/custom_img/fighter.jpg" alt="fighter silhouette" data-value="10">
                     <p class="price">+10s$</p>
                 </div>
             </div>    
@@ -62,12 +62,9 @@
                 <img src="img/custom_img/canvas.jpg" alt="picture of blank board">
             </div>
             <div class="additional_cost">
-                <p>Your current additional price is: <span>5$</span></p>
+                <p>Your current additional price is: <span id="total">$5</span></p>
             </div>
         </div>
-
-
- 
     </main>
     <footer>
         <div>

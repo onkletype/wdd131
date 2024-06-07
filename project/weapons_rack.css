@@ -41,13 +41,13 @@
     margin:5px;
 }
 
-#slider-image-1:target ~ .image-container{
+#button1:target ~ .image-container{
     left: 0px;
 }
-#slider-image-2:target ~ .image-container{
+#button2:target ~ .image-container{
     left: -550px;
 }
-#slider-image-3:target ~ .image-container{
+#button3:target ~ .image-container{
     left: -1100px;
 }
 
@@ -59,7 +59,7 @@ main {
 }
 header{
     display: flex;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     justify-content: space-between;
 }
 #menu{

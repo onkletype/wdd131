@@ -4,8 +4,11 @@ main {
 }
 header{
 display: flex;
-margin-bottom: 200px;
+margin-bottom: 50px;
 justify-content: space-between;
+}
+.intro img{
+    max-width: 100%;
 }
 #menu{
     background-color: white;
@@ -31,21 +34,21 @@ justify-content: space-between;
     border:none;
  
 }
-/* #home{
-    position: absolute;
-    bottom: 50%;
-    right: 13.7%;
+.intro{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
 }
-#belt{
-    position: absolute;
-    bottom: 30%;
-    right: 11.7%;
+.intro p, .intro h2{
+    grid-column: 2/3;
 }
-#weapon{
-    position: absolute;
-    bottom: 10%;
-    right: 8%; */
-/* } */
+.intro p{
+    grid-row: 2/3;
+}
+.intro img{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
 .main{
     display:flex;
     flex-direction: row;
@@ -62,6 +65,8 @@ h1{
     display: block;
     background-color: #9D9171;
     font-family: "Oswald", Arial, Sans-serif;
+    padding-left: 1rem;
+    padding-right: 1rem;
    
 }
 h2{

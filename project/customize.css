@@ -20,9 +20,11 @@
 }
 .additional_cost{
     grid-column: 2/3;
+    font-size: 2rem;
 }
 img{
     max-width: 100%;
+    max-height: 100%;
 }
 .price{
     grid-column: 2/3;
@@ -73,7 +75,7 @@ footer a{
 }
 header{
     display: flex;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     justify-content: space-between;
 }
 #menu{
