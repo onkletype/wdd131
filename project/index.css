@@ -2,36 +2,62 @@ main {
     text-align: center;
     margin: 1rem;
 }
-
+header{
+display: flex;
+margin-bottom: 200px;
+}
 #menu{
     background-color: white;
     border: none;
-    background-image: url(img/scroll.jpg);
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
     width: 200px;
     text-align: center;
     height: 150px;
-    position: relative;
+    position: absolute;
+    right:10px;
 }
-nav a{
-    width: 20px;
+.menu_item{
     text-align: center;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
-
+/* #home{
+    position: absolute;
+    bottom: 50%;
+    right: 13.7%;
+}
+#belt{
+    position: absolute;
+    bottom: 30%;
+    right: 11.7%;
+}
+#weapon{
+    position: absolute;
+    bottom: 10%;
+    right: 8%; */
+/* } */
+.main{
+    display:flex;
+    flex-direction: row;
+    max-width: 100%;
+    border: none;
+}
+.history{
+    max-width: 50%;
+}
 h1{
-    text-align: left;
+    text-align: center;
     color: black;
-    margin-left: 3rem;
+    border: black solid 1px;
+    display: block;
+    background-color: #9D9171;
+    font-family: "Oswald", Arial, Sans-serif;
     
 }
 h2{
     text-align: center;
     color: black;
     border: 5px solid #88292F;
+    font-family: "Oswald", Arial, Sans-serif;
 }
 h3{
     background-color: #9D9171;
@@ -48,4 +74,23 @@ div{
 body{
     background-color: #FFFAFF;
     color: white;
+}
+p{
+    font-family: "Alegreya", Times, serif;
+}
+.intro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+footer{
+    background-color: #88292F;
+    max-width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0;
+}
+footer a{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-items: center;
 }

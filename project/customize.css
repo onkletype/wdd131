@@ -1,0 +1,54 @@
+
+
+
+.custom_container{
+    max-width: 30%;
+}
+.custom_object{
+    display: grid;
+    grid-column: 1fr 1fr;
+}
+.price{
+    grid-column: 2/3;
+}
+div{
+    border: 3px solid black;
+    margin: 2px;
+    padding: 1rem;
+    background-color: #88292F;
+    font-family: "Alegreya", Times, serif;
+}
+
+h1{
+    text-align: center;
+    color: black;
+    border: black solid 1px;
+    display: block;
+    background-color: #9D9171;
+    font-family: "Oswald", Arial, Sans-serif;
+    
+}
+h2{
+    text-align: center;
+    color: black;
+    border: 5px solid #88292F;
+    font-family: "Oswald", Arial, Sans-serif;
+}
+h3{
+    background-color: #9D9171;
+    color: black;
+    font-family: "Oswald", Arial, Sans-serif;
+}
+
+footer{
+    background-color: #88292F;
+    max-width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0;
+}
+footer a{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-items: center;
+}
